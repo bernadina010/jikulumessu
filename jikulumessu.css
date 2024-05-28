@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+p {
+  font-weight: 300;
+  color: #111;
+}
+body{
+  min-height: 1000px;
+}
+/*****************Banner***********************/
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.jpeg);
+  background-size: cover;
+}
+.banner .content{
+  max-width: 900px;
+  text-align: center;
+}
+.banner .content h2{
+  font-size: 3em;
+  color: #fff;
+ }
+ .banner .content p{
+  font-size: 1em;
+  color: #fff;
+}
+.btn{
+  font-size: 1em;
+  color: #fff;
+  background: #0a3ff2;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration:none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  letter-spacing: 6px;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header .sticky{
+  background-color: #111;
+  padding: 10px 100px;
+  border: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo{
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header .sticky .logo{
+  color: #111;
+}
+
+header .logo span{
+  color: #0a3ff2;
+  font-size: 35px;
+}
+
+header .navigation{
+  position: relative;
+  /*colocar o menu na hzontalori*/
+  display: flex;
+}
+
+header .navigation li{
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+header .sticky  .navigation li a{
+  color: #111;
+}
+
+header .navigation li a:hover{
+  color: #0a3ff2;
+}
+/*****************Diferenciais***********************/
+.diferenciais{
+  width: 100%;
+  height: 410px;
+  position: relative;
+  padding: 50px;
+  background-color: rgba(80, 78, 77, 0.099);
+  margin-top: -45px;
+  
+ }
+ .diferenciais .col-3{
+  text-align: center;
+  /*height: auto;*/
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+.diferenciais .col-3:hover{
+  transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+  font-size: 34px;
+  color: #0a3ff2;
+}
+.col-3 p {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #555;
+}
+.diferenciais .col-3 h3{
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+.small{
+  position: relative;
+  left: 730px;
+  top: 30px;
+  bottom: 10px;
+  color: #555;
+}
+.col-3 h4{
+  padding-top: 10px;
+}
+.titleText span{
+  color: #0a3ff2;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+/**************************Sobre o Dispositivo*******************************************/
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .col50{
+  position: relative;
+  width: 48%;
+  margin-right: 10px;
+  padding-left: 40px;
+  text-align: justify;
+}
+.row .col50 h2{
+  margin: auto; 
+  padding: 10px;
+}
+.about .content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.about .content .box{
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.about .content .box .imgBx{
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.about .content .box .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.about .content .box .text{
+padding: 15px 0 5px;
+}
+.about .content .box .text h3{
+  font-family: 400;
+  color: #111;
+}
+
+/**************************Contactos*******************************************/
+#contact{
+  background-color: #efefef;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #777;
+  margin: auto;
+  text-align: center;
+} 
+.col-md-6{
+  position: relative;
+}
+
+.contact-form{
+  padding: 15px;
+} 
+
+.from-control{
+  border-radius: 0 ! important;
+  border: none;
+}
+::placeholder{
+  color: #999 ! important;
+  padding-left: 10px;
+}
+.follow{
+  background: #fff;
+  padding: 10px;
+  margin: 15px;
+  position: relative;
+  right: -600px;
+}
+.contact-info .fa{
+  margin: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+.contact-info{
+  position: relative;
+  left: -610px;
+  /*margin-top: -60px;*/
+  
+}
+/********************Rodapé************************/
+.footer{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(footer.jpeg);
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 40px 0 20px;
+}
+.footer p{
+  color: #8a8a8a;
+  
+}
+.footer h3{
+  color:#fff;
+  margin-bottom: 20px;
+}
+footer-col-1, footer-col-2,  footer-col-3, footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+  
+}
+.footer-col-1{
+  flex-basis: 30%;
+  
+}
+.footer-col-2{
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright{
+  text-align: center;
+}
+.menu-icon{
+  height: 30px;
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+.footer-col-2 .logo{
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+.footer-col-2 .sticky .logo{
+  color: #111;
+}
+.footer-col-2 .logo span{
+  color: #0a3ff2;
+  font-size: 35px;
+}
+.footer-col-1 a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer-col-3 a{
+  text-decoration: none;
+  color: #8a8a8a;
+}
